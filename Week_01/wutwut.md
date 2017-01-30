@@ -128,3 +128,34 @@ We can use `type()` to see the type of an object.
 type(5)    # >> int
 type(3.0)  # >> float
 ```
+
+---
+
+## Binding Variables and Values
+
+The equal sign (=) is an *assignment* of a value to a variable name
+```python
+pi = 3.14159
+pi_approx = 22/7
+```
+- The value is stored in computer memory, specifically in a *_name table_*
+- an assignment binds name to value
+- retrieve value associated with name or variable by invoking the name
+
+#### Abstracting Expressions
+
+- Why do we _give names_ to values of expressions?
+  - So we may *reuse names* instead of values
+  - Also, it's easier to change the code later
+
+```python
+pi = 3.14159
+radius = 2.2
+area = pi * (radius ** 2)
+```
+
+#### Changing Bindings
+
+- Can *re-bind* variable names using new assignment statements
+- previous value may still be stored in memory, but we've lost the handle for it
+- value for area foes not change until you tell the computer to do the calculation again
